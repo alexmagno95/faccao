@@ -8,9 +8,7 @@
 			<ul class="nav navbar-nav">
 				
 				<c:import url="/WEB-INF/jsp/dropdown.jsp"/>
-		        
-				<li><a href="new-tecido">Formulário</a></li>
-				<li><a href="list-tecidos">Lista</a></li>
+
 			</ul>
 		</div>
 	</div>

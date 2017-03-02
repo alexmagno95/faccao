@@ -13,8 +13,10 @@
     
     <title>Task Manager | Home</title>
     
+    
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
-     <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/footer.css" rel="stylesheet">
+
     
     <!--[if lt IE 9]>
 		<script src="static/js/html5shiv.min.js"></script>
@@ -23,13 +25,22 @@
 </head>
 <body>
 
-	<c:import url="cabecalho.jsp"/>
+	<c:import url="/WEB-INF/jsp/header.jsp"/>
 	
 	<div class="container" id="homeDiv">
 		<div class="jumbotron text-center">
-			<h1>Tela de Tecidos</h1>
+			<h1>Página Inicial de Tecidos</h1>
+			
+				<div class="btn-toolbar">
+				  	<a href="new-tecido" class="btn btn-primary">Novo Tecido</a>
+				  	<a href="list-tecidos" class="btn btn-default">Lista</a>
+				</div>	
+				
 		</div>
+		
 	</div>
+	
+	<c:import url="/WEB-INF/jsp/footer.jsp"/>
 
 	<script src="static/js/jquery-1.11.1.min.js"></script>    
     <script src="static/js/bootstrap.min.js"></script>

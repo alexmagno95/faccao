@@ -14,7 +14,7 @@
     <title>Task Manager | Home</title>
     
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
-     <link href="static/css/style.css" rel="stylesheet">
+     <link href="static/css/footer.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
 		<script src="static/js/html5shiv.min.js"></script>
@@ -43,6 +43,8 @@
 			<h1>Bem vindo ao sistema de Facção</h1>
 		</div>
 	</div>
+	
+	<c:import url="/WEB-INF/jsp/footer.jsp"/>
 
 	<script src="static/js/jquery-1.11.1.min.js"></script>    
     <script src="static/js/bootstrap.min.js"></script>

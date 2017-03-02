@@ -11,10 +11,10 @@
     <meta http-equiv="Cache-Control" content="no-cache"> 
     <meta http-equiv="Expires" content="Sat, 01 Dec 2001 00:00:00 GMT">
     
-    <title>Tecido Manager | Home</title>
+    <title>Facção</title>
     
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
-     <link href="static/css/style.css" rel="stylesheet">
+     <link href="static/css/footer.css" rel="stylesheet">
     
     <!--[if lt IE 9]>
 		<script src="static/js/html5shiv.min.js"></script>
@@ -23,7 +23,7 @@
 </head>
 <body>
 
-	<c:import url="cabecalho.jsp"/>
+	<c:import url="/WEB-INF/jsp/header.jsp"/>
 
 	<div class="container text-center">
 	
@@ -45,15 +45,25 @@
 			</div>
 			
 
-			<div class="btn-toolbar">
-			  <input type="submit" class="btn btn-primary" value="Save"/>
-			  <a href="list-tecidos" class="btn btn-default">Voltar</a>
-			</div>	
+		<div class="btn-toolbar">
+		    
+		    <input type="submit" class="btn btn-primary" value="Salvar"/>
+		    
+		    <c:if test="${tecido.id == null}">
+		    	<a href="list-tecidos" class="btn btn-default">Lista</a>
+			</c:if>
+			<c:if test="${tecido.id != null}">
+				<a href="list-tecidos" class="btn btn-default">Voltar</a>
+			</c:if>
+			
+		</div>		
 			
 		</form>
 		
 	</div>
-
+	
+	
+	<c:import url="/WEB-INF/jsp/footer.jsp"/>
 
 	<script src="static/js/jquery-1.11.1.min.js"></script>    
     <script src="static/js/bootstrap.min.js"></script>

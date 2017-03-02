@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+ html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 90px;
+  
+}
+
+.btn-toolbar{
+	margin-bottom: 25px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  line-height: 80px; /* Vertically center the text there */
+  background-color: #f0f0f1 ;
+}

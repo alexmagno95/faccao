@@ -26,7 +26,7 @@ public class MainController {
 		return "home";
 	}
 
-	@GetMapping("/task")
+	@GetMapping("/index-task")
 	public String index(HttpServletRequest request){
 		return "task/index";
 	}
