@@ -11,7 +11,7 @@
     <meta http-equiv="Cache-Control" content="no-cache"> 
     <meta http-equiv="Expires" content="Sat, 01 Dec 2001 00:00:00 GMT">
     
-    <title>Task Manager | Home</title>
+    <title>Facção</title>
     
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
      <link href="static/css/style.css" rel="stylesheet">
@@ -59,13 +59,18 @@
 					<div class="col-sm-1">No</div>
 				</div>				
 			</div>		
-
-			<div class="btn-toolbar">
-			  <input type="submit" class="btn btn-primary" value="Save"/>
-			  <a href="list-tasks" class="btn btn-default">Voltar</a>
-			</div>	
 			
 		</form>
+		
+		<div class="btn-toolbar">
+		    <input type="submit" class="btn btn-primary" value="Save"/>
+		    <c:if test="${task.id == null}">
+		    	<a href="list-tasks" class="btn btn-default">Lista</a>
+			</c:if>
+			<c:if test="${task.id != null}">
+				<a href="list-tasks" class="btn btn-default">Voltar</a>
+			</c:if>
+		</div>	
 		
 	</div>
 

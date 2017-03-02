@@ -11,7 +11,7 @@
     <meta http-equiv="Cache-Control" content="no-cache"> 
     <meta http-equiv="Expires" content="Sat, 01 Dec 2001 00:00:00 GMT">
     
-    <title>Task Manager | Home</title>
+    <title>Facção</title>
     
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
      <link href="static/css/style.css" rel="stylesheet">
@@ -27,9 +27,18 @@
 	
 	<div class="container" id="homeDiv">
 		<div class="jumbotron text-center">
-			<h1>Welcome to Task Manager</h1>
+			<h1>Página Inicial de Tarefas</h1>
+			
+				<div class="btn-toolbar">
+				  	<a href="new-task" class="btn btn-primary">Nova Tarefa</a>
+				  	<a href="list-tasks" class="btn btn-default">Lista</a>
+				</div>	
+				
 		</div>
+		
 	</div>
+	
+	
 
 	<script src="static/js/jquery-1.11.1.min.js"></script>    
     <script src="static/js/bootstrap.min.js"></script>

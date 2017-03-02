@@ -2,7 +2,7 @@
 
 <div role="navigation">
 	<div class="navbar navbar-inverse">
-		<a href="/" class="navbar-brand">Bootsample</a>
+		<a href="/" class="navbar-brand">Facção</a>
 
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
