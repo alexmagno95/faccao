@@ -16,7 +16,7 @@ import faccao.model.Task;
 import faccao.service.TaskService;
 
 @Controller
-public class MainController {
+public class TaskController {
 	
 	@Autowired
 	private TaskService taskService;

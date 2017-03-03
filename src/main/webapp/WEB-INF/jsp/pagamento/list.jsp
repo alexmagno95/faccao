@@ -26,8 +26,8 @@
 	<c:import url="/WEB-INF/jsp/header.jsp"/>
 	
 
-	<div class="container text-center" id="funcionariosDiv">
-		<h3>Lista de Funcionários</h3>
+	<div class="container text-center" id="pagamentosDiv">
+		<h3>Lista de Pagamentos</h3>
 		<hr>
 		<div class="table-responsive">
 			<table class="table table-striped table-bordered text-left">
@@ -35,24 +35,18 @@
 					<tr>
 						<th>Id</th>
 						<th>Nome</th>
-						<th>Endereço</th>
-						<th>Telefone</th>
-						<th>Salário/Hora (R$)</th>
 						<th></th>
 						<th></th>
 					</tr>
 				</thead>
 				<tbody>
-					<c:forEach var="funcionario" items="${funcionarios}">
+					<c:forEach var="pagamento" items="${pagamentos}">
 						<tr>
-							<td>${funcionario.id}</td>
-							<td>${funcionario.nome}</td>
-							<td>${funcionario.endereco}</td>
-							<td>${funcionario.telefone}</td>
-							<td>${funcionario.valorHora}</td>
+							<td>${pagamento.id}</td>
+							<td>${pagamento.nome}</td>
 							
-							<td><a href="update-funcionario?id=${funcionario.id}"><span class="glyphicon glyphicon-pencil"></span></a></td>
-							<td><a href="delete-funcionario?id=${funcionario.id}"><span class="glyphicon glyphicon-trash"></span></a></td>
+							<td><a href="update-pagamento?id=${pagamento.id}"><span class="glyphicon glyphicon-pencil"></span></a></td>
+							<td><a href="delete-pagamento?id=${pagamento.id}"><span class="glyphicon glyphicon-trash"></span></a></td>
 						</tr>
 					</c:forEach>
 				</tbody>
@@ -61,8 +55,8 @@
 		
 		
 		<div class="btn-toolbar">
-			<a href="new-funcionario" class="btn btn-primary">Novo Funcionário</a>
-		  	<a href="index-funcionario" class="btn btn-default">Página inicial de Funcionários</a>
+			<a href="new-pagamento" class="btn btn-primary">Novo Pagamento</a>
+		  	<a href="index-pagamento" class="btn btn-default">Página inicial de Pagamentos</a>
 		</div>
 		
 	</div>

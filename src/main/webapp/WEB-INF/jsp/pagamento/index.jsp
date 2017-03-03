@@ -29,11 +29,11 @@
 	
 	<div class="container" id="homeDiv">
 		<div class="jumbotron text-center">
-			<h1>Página Inicial de Tecidos</h1>
+			<h1>Página Inicial de Pagamentos</h1>
 			
 				<div class="btn-toolbar">
-				  	<a href="new-tecido" class="btn btn-primary">Novo Tecido</a>
-				  	<a href="list-tecidos" class="btn btn-default">Lista</a>
+				  	<a href="new-pagamento" class="btn btn-primary">Novo Pagamento</a>
+				  	<a href="list-pagamentos" class="btn btn-default">Lista</a>
 				</div>	
 				
 		</div>

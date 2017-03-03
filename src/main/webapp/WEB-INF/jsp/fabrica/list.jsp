@@ -26,8 +26,8 @@
 	<c:import url="/WEB-INF/jsp/header.jsp"/>
 	
 
-	<div class="container text-center" id="funcionariosDiv">
-		<h3>Lista de Funcionários</h3>
+	<div class="container text-center" id="fabricasDiv">
+		<h3>Lista de Fábricas</h3>
 		<hr>
 		<div class="table-responsive">
 			<table class="table table-striped table-bordered text-left">
@@ -37,22 +37,22 @@
 						<th>Nome</th>
 						<th>Endereço</th>
 						<th>Telefone</th>
-						<th>Salário/Hora (R$)</th>
+						<th>Moda</th>
 						<th></th>
 						<th></th>
 					</tr>
 				</thead>
 				<tbody>
-					<c:forEach var="funcionario" items="${funcionarios}">
+					<c:forEach var="fabrica" items="${fabricas}">
 						<tr>
-							<td>${funcionario.id}</td>
-							<td>${funcionario.nome}</td>
-							<td>${funcionario.endereco}</td>
-							<td>${funcionario.telefone}</td>
-							<td>${funcionario.valorHora}</td>
+							<td>${fabrica.id}</td>
+							<td>${fabrica.nome}</td>
+							<td>${fabrica.endereco}</td>
+							<td>${fabrica.telefone}</td>
+							<td>${fabrica.moda.nome}</td>
 							
-							<td><a href="update-funcionario?id=${funcionario.id}"><span class="glyphicon glyphicon-pencil"></span></a></td>
-							<td><a href="delete-funcionario?id=${funcionario.id}"><span class="glyphicon glyphicon-trash"></span></a></td>
+							<td><a href="update-fabrica?id=${fabrica.id}"><span class="glyphicon glyphicon-pencil"></span></a></td>
+							<td><a href="delete-fabrica?id=${fabrica.id}"><span class="glyphicon glyphicon-trash"></span></a></td>
 						</tr>
 					</c:forEach>
 				</tbody>
@@ -61,8 +61,8 @@
 		
 		
 		<div class="btn-toolbar">
-			<a href="new-funcionario" class="btn btn-primary">Novo Funcionário</a>
-		  	<a href="index-funcionario" class="btn btn-default">Página inicial de Funcionários</a>
+			<a href="new-fabrica" class="btn btn-primary">Nova Fábrica</a>
+		  	<a href="index-fabrica" class="btn btn-default">Página inicial de Fábricas</a>
 		</div>
 		
 	</div>

@@ -11,7 +11,7 @@
     <meta http-equiv="Cache-Control" content="no-cache"> 
     <meta http-equiv="Expires" content="Sat, 01 Dec 2001 00:00:00 GMT">
     
-    <title>Task Manager | Home</title>
+    <title>Facção</title>
     
     <link href="static/css/bootstrap.min.css" rel="stylesheet">
      <link href="static/css/footer.css" rel="stylesheet">
