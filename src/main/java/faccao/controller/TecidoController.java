@@ -41,7 +41,7 @@ public class TecidoController {
 	public String saveTecido(@ModelAttribute Tecido tecido, BindingResult bindingResult, HttpServletRequest request){
 		tecidoService.save(tecido);
 		request.setAttribute("tecidos", tecidoService.findAll());
-		return "tecido/list";
+		return "redirect:list-tecidos";
 	}
 	
 	@GetMapping("/update-tecido")

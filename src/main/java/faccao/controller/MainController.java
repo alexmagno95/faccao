@@ -47,7 +47,7 @@ public class MainController {
 		task.setDateCreated(new Date());
 		taskService.save(task);
 		request.setAttribute("tasks", taskService.findAll());
-		return "task/list";
+		return "redirect:list-tasks";
 	}
 	
 	@GetMapping("/update-task")
